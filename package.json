@@ -1,0 +1,11 @@
+{
+  "name": "school-website",
+  "version": "1.0.0",
+  "description": "A complete, production-ready school website with 9 pages, admin dashboard, and admission inquiry management.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

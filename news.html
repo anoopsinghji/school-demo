@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Events – Edgemont School</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .news-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;}
+    .news-tab{padding:9px 22px;border-radius:100px;font-size:0.85rem;font-weight:600;border:1.5px solid var(--gray-200);color:var(--text-muted);background:var(--white);cursor:pointer;transition:var(--transition);}
+    .news-tab:hover{border-color:var(--navy);color:var(--navy);}
+    .news-tab.active{background:var(--navy);border-color:var(--navy);color:var(--white);}
+    .event-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:24px;margin-bottom:16px;display:flex;gap:20px;transition:var(--transition);}
+    .event-card:hover{box-shadow:var(--shadow-md);transform:translateX(4px);}
+    .event-date-box{flex-shrink:0;width:60px;text-align:center;background:var(--navy);border-radius:10px;padding:10px 8px;color:white;}
+    .event-date-box .day{font-family:var(--font-display);font-size:1.6rem;font-weight:700;line-height:1;}
+    .event-date-box .month{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;margin-top:4px;color:var(--gold-light);}
+    .event-body h4{margin-bottom:6px;font-size:1rem;}
+    .event-body p{font-size:0.85rem;}
+    .event-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
+    .event-meta span{font-size:0.75rem;color:var(--text-muted);display:flex;align-items:center;gap:5px;}
+    .notice-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:20px 24px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start;transition:var(--transition);}
+    .notice-card:hover{border-color:var(--gold);box-shadow:var(--shadow-sm);}
+    .notice-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:0.95rem;flex-shrink:0;}
+    .notice-body{flex:1;}
+    .notice-body h4{font-size:0.95rem;margin-bottom:4px;}
+    .notice-body p{font-size:0.83rem;}
+    .notice-date{font-size:0.75rem;color:var(--text-muted);white-space:nowrap;}
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<section class="page-hero">
+  <div class="container">
+    <h1>News & Events</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>News & Events</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:start" class="responsive-grid-news">
+
+      <!-- Main Content -->
+      <div>
+        <!-- Tabs -->
+        <div class="news-tabs">
+          <button class="news-tab active" onclick="filterNews('all',this)">All Updates</button>
+          <button class="news-tab" onclick="filterNews('announcement',this)">Announcements</button>
+          <button class="news-tab" onclick="filterNews('event',this)">Events</button>
+          <button class="news-tab" onclick="filterNews('achievement',this)">Achievements</button>
+          <button class="news-tab" onclick="filterNews('exam',this)">Examination</button>
+        </div>
+
+        <!-- News Cards -->
+        <div id="newsContainer">
+          <!-- Achievements -->
+          <div class="news-card fade-up" data-type="achievement" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-sports">
+              <img src="images/sports_complex.png" alt="State Cricket Championship Winner" />
+              <span class="news-cat">Achievement</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> June 10, 2025</div>
+              <h4>Edgemont Wins State Cricket Championship for Second Consecutive Year</h4>
+              <p>Our Under-17 cricket team defeated 42 schools across Delhi NCR to claim the prestigious State Cricket Championship trophy. Captain Rohit Verma (Class 11) led the team brilliantly with a century in the final.</p>
+              <div style="margin-top:12px;padding:12px;background:var(--gold-pale);border-radius:8px;font-size:0.83rem;color:var(--text-muted)">
+                <i class="bi bi-info-circle text-gold"></i> The team will now represent Delhi at the National School Games in August 2025.
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="event" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-event">
+              <img src="images/science_fair.png" alt="Annual Science & Innovation Fair" />
+              <span class="news-cat">Upcoming Event</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> June 15, 2025</div>
+              <h4>Annual Science & Innovation Fair 2025 — Open to Parents</h4>
+              <p>Students from Classes 6–12 will present 80+ science, technology, and social projects. Three IIT Delhi professors have been invited as judges. All parents are warmly invited.</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+                <span style="font-size:0.82rem;color:var(--text-muted)"><i class="bi bi-clock"></i> 10:00 AM – 4:00 PM</span>
+                <span style="font-size:0.82rem;color:var(--text-muted)"><i class="bi bi-geo-alt"></i> Main Auditorium & Science Block</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="announcement" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-admission">
+              <img src="images/admissions.png" alt="Admissions Open 2026-27" />
+              <span class="news-cat">Announcement</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> June 5, 2025</div>
+              <h4>Admissions Now Open for Academic Year 2025–26</h4>
+              <p>We are pleased to announce that applications are now being accepted for Classes Nursery to Class 11 for the upcoming academic year. Limited seats are available.</p>
+              <a href="admissions.html" class="btn btn-primary btn-sm" style="margin-top:14px">Apply Now <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="achievement" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-achievement">
+              <img src="images/olympiad.png" alt="National Science Olympiad Medals" />
+              <span class="news-cat">Achievement</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> May 28, 2025</div>
+              <h4>12 Students Win Medals at National Science Olympiad 2025</h4>
+              <p>Edgemont School students swept the National Science Olympiad with 4 Gold, 5 Silver, and 3 Bronze medals. We ranked 2nd overall among 1,200 participating schools.</p>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="exam" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-classroom">
+              <img src="images/smart_classroom.png" alt="CBSE Board Examination Results" />
+              <span class="news-cat">Examination</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> May 20, 2025</div>
+              <h4>Class 10 & 12 CBSE Board Results — 100% Pass Rate</h4>
+              <p>Edgemont School proudly announces 100% results for the 15th consecutive year. 45 students scored above 95% in Class 12 and 62 students in Class 10. Topper: Priya Sharma (99.4%).</p>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="event" style="margin-bottom:24px">
+            <div class="news-image sample-image-card img-cultural">
+              <img src="images/cultural_fest.png" alt="Annual Cultural Fest Performance" />
+              <span class="news-cat">Event</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> May 10, 2025</div>
+              <h4>Annual Cultural Fest "Utsav 2025" — A Grand Celebration</h4>
+              <p>Over 600 students performed in 3-day cultural extravaganza featuring classical dance, western music, drama, debate, and art exhibitions. Event was attended by 2,000+ parents and guests.</p>
+            </div>
+          </div>
+
+          <div class="news-card fade-up" data-type="announcement">
+            <div class="news-image sample-image-card img-campus">
+              <img src="images/summer_camp.png" alt="Summer Camp Vacation Activities" />
+              <span class="news-cat">Holiday Notice</span>
+            </div>
+            <div class="news-body">
+              <div class="news-date"><i class="bi bi-calendar3"></i> April 30, 2025</div>
+              <h4>Summer Vacation: 15 May to 30 June 2025</h4>
+              <p>The school will remain closed for summer vacation from 15th May to 30th June 2025. Summer camp sessions (optional) will be held from 1–14 June. Registration open on school portal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div>
+        <!-- Upcoming Events -->
+        <div style="background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:28px;margin-bottom:24px">
+          <h3 style="margin-bottom:20px;font-size:1.2rem">Upcoming Events</h3>
+          <div class="event-card" style="padding:16px;margin-bottom:12px">
+            <div class="event-date-box"><div class="day">15</div><div class="month">Jun</div></div>
+            <div class="event-body"><h4 style="font-size:0.9rem">Science & Innovation Fair</h4><div class="event-meta"><span><i class="bi bi-clock"></i> 10 AM – 4 PM</span></div><p style="font-size:0.8rem">Main Auditorium & Science Block</p></div>
+          </div>
+          <div class="event-card" style="padding:16px;margin-bottom:12px">
+            <div class="event-date-box" style="background:var(--gold)"><div class="day" style="color:var(--navy-dark)">28</div><div class="month" style="color:var(--navy-dark)">Jun</div></div>
+            <div class="event-body"><h4 style="font-size:0.9rem">New Student Orientation 2025</h4><div class="event-meta"><span><i class="bi bi-clock"></i> 9 AM – 12 PM</span></div><p style="font-size:0.8rem">Main Assembly Ground</p></div>
+          </div>
+          <div class="event-card" style="padding:16px;margin-bottom:12px">
+            <div class="event-date-box"><div class="day">01</div><div class="month">Jul</div></div>
+            <div class="event-body"><h4 style="font-size:0.9rem">New Academic Session Begins</h4><div class="event-meta"><span><i class="bi bi-clock"></i> 8:00 AM</span></div><p style="font-size:0.8rem">All classes resume</p></div>
+          </div>
+          <div class="event-card" style="padding:16px">
+            <div class="event-date-box"><div class="day">15</div><div class="month">Aug</div></div>
+            <div class="event-body"><h4 style="font-size:0.9rem">Independence Day Celebration</h4><div class="event-meta"><span><i class="bi bi-clock"></i> 8:00 AM</span></div><p style="font-size:0.8rem">Assembly Ground — Parents Welcome</p></div>
+          </div>
+        </div>
+
+        <!-- Notice Board -->
+        <div style="background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:28px;margin-bottom:24px">
+          <h3 style="margin-bottom:20px;font-size:1.2rem"><i class="bi bi-pin-angle-fill" style="color:var(--gold)"></i> Notice Board</h3>
+          <div class="notice-card"><div class="notice-icon" style="background:rgba(239,68,68,0.1);color:#dc2626"><i class="bi bi-bell-fill"></i></div><div class="notice-body"><h4>Fee Payment Reminder</h4><p>Q1 2025–26 fees due by 15 June 2025. Late fee applicable after.</p></div><span class="notice-date">Jun 1</span></div>
+          <div class="notice-card"><div class="notice-icon" style="background:rgba(13,43,85,0.08);color:var(--navy)"><i class="bi bi-book-fill"></i></div><div class="notice-body"><h4>New Textbooks Available</h4><p>CBSE 2025–26 textbooks available at school stationery from 25 June.</p></div><span class="notice-date">May 30</span></div>
+          <div class="notice-card"><div class="notice-icon" style="background:rgba(201,150,42,0.1);color:var(--gold)"><i class="bi bi-bus-front-fill"></i></div><div class="notice-body"><h4>Transport Route Update</h4><p>New bus route for Dwarka sector 10–22 added from July 1.</p></div><span class="notice-date">May 25</span></div>
+          <div class="notice-card"><div class="notice-icon" style="background:rgba(16,185,129,0.1);color:#059669"><i class="bi bi-clipboard-check-fill"></i></div><div class="notice-body"><h4>PTM Schedule Released</h4><p>Parent-Teacher Meetings for Classes 6–10: 20 July 2025, 9 AM–1 PM.</p></div><span class="notice-date">May 22</span></div>
+        </div>
+
+        <!-- Exam Notices -->
+        <div style="background:var(--navy);border-radius:var(--radius-md);padding:28px">
+          <h3 style="color:var(--white);font-size:1.2rem;margin-bottom:20px">Examination Schedule</h3>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:14px"><div style="color:var(--gold-light);font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">Periodic Test 1</div><div style="color:white;font-size:0.9rem;margin-top:4px">15–20 July 2025 | Classes 1–12</div></div>
+            <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:14px"><div style="color:var(--gold-light);font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">Half-Yearly Exams</div><div style="color:white;font-size:0.9rem;margin-top:4px">1–12 September 2025 | Classes 1–12</div></div>
+            <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:14px"><div style="color:var(--gold-light);font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">Periodic Test 2</div><div style="color:white;font-size:0.9rem;margin-top:4px">1–6 December 2025 | Classes 1–12</div></div>
+            <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:14px"><div style="color:var(--gold-light);font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">Annual Examinations</div><div style="color:white;font-size:0.9rem;margin-top:4px">2–18 March 2026 | Classes 1–12</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/dist/umd/sanity-client.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/dist/umd/image-url.min.js"></script>
+<script src="js/sanity-client.js"></script>
+<script src="js/cms-renderer.js"></script>
+<script>
+function filterNews(type, btn) {
+  document.querySelectorAll('.news-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#newsContainer .news-card').forEach(card => {
+    const show = type === 'all' || card.getAttribute('data-type') === type;
+    card.style.display = show ? '' : 'none';
+  });
+}
+</script>
+<style>@media(max-width:900px){.responsive-grid-news{grid-template-columns:1fr!important;}}</style>
+</body>
+</html>

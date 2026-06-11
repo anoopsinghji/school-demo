@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics – Edgemont School</title>
+  <meta name="description" content="Explore Edgemont School's comprehensive curriculum from Primary to Senior Secondary with CBSE affiliation." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .level-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);overflow:hidden;transition:var(--transition);}
+    .level-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);}
+    .level-header{padding:28px 28px 20px;border-bottom:1px solid var(--gray-100);}
+    .level-badge{display:inline-block;padding:5px 14px;border-radius:100px;font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:14px;}
+    .badge-primary-level{background:rgba(13,43,85,0.08);color:var(--navy);}
+    .badge-secondary-level{background:rgba(201,150,42,0.1);color:var(--gold);}
+    .badge-senior-level{background:rgba(16,185,129,0.1);color:#059669;}
+    .level-body{padding:24px 28px;}
+    .subject-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+    .subject-chip{background:var(--off-white);color:var(--text-muted);padding:6px 14px;border-radius:100px;font-size:0.8rem;border:1px solid var(--gray-100);}
+    .method-card{background:var(--white);border-radius:var(--radius-md);padding:28px 24px;border:1px solid var(--gray-100);transition:var(--transition);text-align:center;}
+    .method-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px);}
+    .method-icon{width:56px;height:56px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.4rem;}
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<section class="page-hero">
+  <div class="container">
+    <h1>Academics</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Academics</span></div>
+  </div>
+</section>
+
+<!-- Curriculum Overview -->
+<section class="section" id="curriculum">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Our Curriculum</span>
+      <h2>CBSE Curriculum Overview</h2>
+      <p>Affiliated to the Central Board of Secondary Education (CBSE), our curriculum blends national standards with global best practices to produce well-rounded, future-ready students.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" class="responsive-grid-3">
+      <!-- Primary -->
+      <div class="level-card fade-up">
+        <div class="level-header">
+          <span class="level-badge badge-primary-level">Classes 1–5</span>
+          <h3>Primary Education</h3>
+          <p style="font-size:0.9rem;margin-top:8px">Building strong foundations in literacy, numeracy, and curiosity through activity-based learning.</p>
+        </div>
+        <div class="level-body">
+          <p style="font-size:0.85rem;margin-bottom:12px"><strong>Focus Areas:</strong></p>
+          <p style="font-size:0.85rem">Foundational literacy & numeracy, environmental studies, arts & crafts, music, physical education, and social-emotional learning.</p>
+          <div class="subject-list">
+            <span class="subject-chip">English</span><span class="subject-chip">Hindi</span>
+            <span class="subject-chip">Mathematics</span><span class="subject-chip">EVS</span>
+            <span class="subject-chip">Computer Basics</span><span class="subject-chip">Art & Craft</span>
+            <span class="subject-chip">Music</span><span class="subject-chip">PE</span>
+          </div>
+          <div style="margin-top:20px;padding:14px;background:var(--off-white);border-radius:8px">
+            <p style="font-size:0.82rem"><i class="bi bi-info-circle text-gold"></i> <strong>Assessment:</strong> Continuous & Comprehensive Evaluation (CCE) — No written exams up to Class 2.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Secondary -->
+      <div class="level-card fade-up">
+        <div class="level-header">
+          <span class="level-badge badge-secondary-level">Classes 6–10</span>
+          <h3>Secondary Education</h3>
+          <p style="font-size:0.9rem;margin-top:8px">Deepening knowledge across disciplines, with introduction of specialized subjects and career awareness.</p>
+        </div>
+        <div class="level-body">
+          <p style="font-size:0.85rem;margin-bottom:12px"><strong>Focus Areas:</strong></p>
+          <p style="font-size:0.85rem">Core academics, critical thinking, project-based learning, and preparation for CBSE Board Examinations (Class 10).</p>
+          <div class="subject-list">
+            <span class="subject-chip">English</span><span class="subject-chip">Hindi/Sanskrit</span>
+            <span class="subject-chip">Mathematics</span><span class="subject-chip">Science</span>
+            <span class="subject-chip">Social Studies</span><span class="subject-chip">Computer Science</span>
+            <span class="subject-chip">3rd Language</span><span class="subject-chip">PE & Health</span>
+          </div>
+          <div style="margin-top:20px;padding:14px;background:var(--off-white);border-radius:8px">
+            <p style="font-size:0.82rem"><i class="bi bi-info-circle text-gold"></i> <strong>Board Exam:</strong> CBSE Class 10 Board Examination with internal & external assessment.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Senior Secondary -->
+      <div class="level-card fade-up">
+        <div class="level-header">
+          <span class="level-badge badge-senior-level">Classes 11–12</span>
+          <h3>Senior Secondary</h3>
+          <p style="font-size:0.9rem;margin-top:8px">Specialized streams preparing students for higher education and professional careers.</p>
+        </div>
+        <div class="level-body">
+          <p style="font-size:0.85rem;margin-bottom:12px"><strong>Streams Available:</strong></p>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="padding:10px 14px;background:rgba(13,43,85,0.05);border-radius:8px;border-left:3px solid var(--navy)">
+              <strong style="font-size:0.85rem">Science</strong>
+              <p style="font-size:0.8rem;margin-top:2px">PCM / PCB / PCMB with Computer Science or IP</p>
+            </div>
+            <div style="padding:10px 14px;background:rgba(201,150,42,0.05);border-radius:8px;border-left:3px solid var(--gold)">
+              <strong style="font-size:0.85rem">Commerce</strong>
+              <p style="font-size:0.8rem;margin-top:2px">Accountancy, Business Studies, Economics, Mathematics</p>
+            </div>
+            <div style="padding:10px 14px;background:rgba(16,185,129,0.05);border-radius:8px;border-left:3px solid #059669">
+              <strong style="font-size:0.85rem">Humanities</strong>
+              <p style="font-size:0.8rem;margin-top:2px">History, Geography, Political Science, Sociology, Psychology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Learning Methodology -->
+<section class="section bg-off-white" id="methodology">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Pedagogy</span>
+      <h2>Our Learning Methodology</h2>
+      <p>We combine time-tested teaching practices with modern pedagogical approaches for maximum student engagement and learning.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+      <div class="method-card fade-up">
+        <div class="method-icon" style="background:rgba(13,43,85,0.08);color:var(--navy)"><i class="bi bi-person-workspace"></i></div>
+        <h4>Activity-Based Learning</h4><p style="font-size:0.85rem">Students learn by doing — experiments, projects, and real-world problem solving build deep understanding.</p>
+      </div>
+      <div class="method-card fade-up">
+        <div class="method-icon" style="background:rgba(201,150,42,0.1);color:var(--gold)"><i class="bi bi-people"></i></div>
+        <h4>Collaborative Learning</h4><p style="font-size:0.85rem">Group projects and peer learning develop teamwork, communication, and leadership skills.</p>
+      </div>
+      <div class="method-card fade-up">
+        <div class="method-icon" style="background:rgba(16,185,129,0.1);color:#059669"><i class="bi bi-laptop"></i></div>
+        <h4>Technology Integration</h4><p style="font-size:0.85rem">Smart boards, educational apps, and coding tools bring lessons alive and prepare students for the digital world.</p>
+      </div>
+      <div class="method-card fade-up">
+        <div class="method-icon" style="background:rgba(239,68,68,0.1);color:#ef4444"><i class="bi bi-lightbulb"></i></div>
+        <h4>Critical Thinking</h4><p style="font-size:0.85rem">Socratic discussions, debates, and case studies challenge students to think beyond rote memorization.</p>
+      </div>
+      <div class="method-card fade-up">
+        <div class="method-icon" style="background:rgba(139,92,246,0.1);color:#7c3aed"><i class="bi bi-bar-chart-steps"></i></div>
+        <h4>Differentiated Instruction</h4><p style="font-size:0.85rem">Teachers adapt content and pace to meet every learner's individual needs, ensuring no child is left behind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Examination System -->
+<section class="section" id="examination">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Assessment</span>
+      <h2>Examination System</h2>
+      <p>Our assessment framework is designed to measure comprehensive learning, not just memory retention.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start" class="responsive-grid-2">
+      <div class="fade-up">
+        <h3 style="margin-bottom:20px">Assessment Structure</h3>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;gap:16px;align-items:start">
+            <div style="width:44px;height:44px;background:var(--gold-pale);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:var(--gold)"><i class="bi bi-1-circle"></i></div>
+            <div><h4 style="margin-bottom:4px">Periodic Tests (20 marks)</h4><p style="font-size:0.88rem">Conducted every month or 6 weeks to gauge ongoing comprehension and identify gaps early.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:start">
+            <div style="width:44px;height:44px;background:var(--gold-pale);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:var(--gold)"><i class="bi bi-2-circle"></i></div>
+            <div><h4 style="margin-bottom:4px">Half-Yearly Examination (80 marks)</h4><p style="font-size:0.88rem">Comprehensive written test covering all syllabus from April to September. Full marks breakdown provided.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:start">
+            <div style="width:44px;height:44px;background:var(--gold-pale);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:var(--gold)"><i class="bi bi-3-circle"></i></div>
+            <div><h4 style="margin-bottom:4px">Annual Examination (80 marks)</h4><p style="font-size:0.88rem">Full-year assessment in March. Combined with internal assessments for final grade computation.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:start">
+            <div style="width:44px;height:44px;background:var(--gold-pale);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:var(--gold)"><i class="bi bi-4-circle"></i></div>
+            <div><h4 style="margin-bottom:4px">Internal Assessment (20 marks)</h4><p style="font-size:0.88rem">Includes portfolio, practicals, projects, speaking skills, and class participation scores.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <h3 style="margin-bottom:20px">Academic Calendar</h3>
+        <div style="background:var(--off-white);border-radius:var(--radius-md);overflow:hidden">
+          <table style="width:100%;border-collapse:collapse">
+            <thead><tr style="background:var(--navy)"><th style="padding:12px 16px;color:white;text-align:left;font-size:0.82rem">Period</th><th style="padding:12px 16px;color:white;text-align:left;font-size:0.82rem">Months</th><th style="padding:12px 16px;color:white;text-align:left;font-size:0.82rem">Key Activity</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Term 1</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Apr – Sep</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Teaching + Half-Yearly Exam</td></tr>
+              <tr><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Term 2</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Oct – Mar</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Teaching + Annual Exam</td></tr>
+              <tr><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Summer Break</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">May – Jun</td><td style="padding:12px 16px;font-size:0.85rem;border-bottom:1px solid var(--gray-100)">Summer Camp & Activities</td></tr>
+              <tr><td style="padding:12px 16px;font-size:0.85rem">Winter Break</td><td style="padding:12px 16px;font-size:0.85rem">Dec 25 – Jan 1</td><td style="padding:12px 16px;font-size:0.85rem">Winter Vacation</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top:20px;padding:16px;background:rgba(13,43,85,0.05);border-radius:8px;border-left:3px solid var(--navy)">
+          <p style="font-size:0.85rem"><strong>Grading Scale:</strong> A1 (91–100), A2 (81–90), B1 (71–80), B2 (61–70), C1 (51–60), C2 (41–50), D (33–40), E (below 33 – Needs Improvement)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script><script src="js/main.js"></script>
+<style>@media(max-width:768px){.responsive-grid-2,.responsive-grid-3{grid-template-columns:1fr!important;}}</style>
+</body>
+</html>

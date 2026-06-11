@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Edgemont School</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .contact-detail-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-md);padding:28px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;transition:var(--transition);}
+    .contact-detail-card:hover{box-shadow:var(--shadow-md);border-color:var(--gold);}
+    .cdc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;}
+    .cdc-label{font-size:0.75rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;}
+    .cdc-value{font-size:0.95rem;color:var(--text);font-weight:500;line-height:1.6;}
+    .map-container{width:100%;height:380px;border-radius:var(--radius-md);overflow:hidden;background:var(--gray-100);border:1px solid var(--gray-200);}
+    .map-container iframe{width:100%;height:100%;border:0;display:block;}
+    .dept-contact{background:var(--off-white);border-radius:var(--radius-md);padding:28px;margin-bottom:16px;}
+    .dept-contact h4{margin-bottom:16px;font-size:1rem;}
+    .dept-contact-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--gray-200);font-size:0.88rem;}
+    .dept-contact-row:last-child{border-bottom:none;padding-bottom:0;}
+    .dept-contact-row .dept-name{color:var(--text-muted);}
+    .dept-contact-row .dept-phone{color:var(--navy);font-weight:600;}
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Contact</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:52px;align-items:start" class="responsive-grid-2">
+
+      <!-- Contact Info -->
+      <div id="contact-info">
+        <h2 style="margin-bottom:8px">Get in Touch</h2>
+        <p style="margin-bottom:32px">We're always happy to hear from parents, students, and well-wishers. Reach out to us through any of the channels below.</p>
+
+        <div class="contact-detail-card fade-up">
+          <div class="cdc-icon" style="background:rgba(13,43,85,0.08);color:var(--navy)"><i class="bi bi-geo-alt-fill"></i></div>
+          <div><div class="cdc-label">School Address</div><div class="cdc-value">123, Edgemont Road, Civil Lines,<br>New Delhi – 110054, India</div></div>
+        </div>
+
+        <div class="contact-detail-card fade-up">
+          <div class="cdc-icon" style="background:rgba(201,150,42,0.1);color:var(--gold)"><i class="bi bi-telephone-fill"></i></div>
+          <div><div class="cdc-label">Phone Numbers</div><div class="cdc-value">+91 11 2345 6789 (Main Office)<br>+91 98765 43210 (Admissions)</div></div>
+        </div>
+
+        <div class="contact-detail-card fade-up">
+          <div class="cdc-icon" style="background:rgba(16,185,129,0.1);color:#059669"><i class="bi bi-envelope-fill"></i></div>
+          <div><div class="cdc-label">Email Addresses</div><div class="cdc-value">info@edgemontschool.edu.in<br>admissions@edgemontschool.edu.in</div></div>
+        </div>
+
+        <div class="contact-detail-card fade-up">
+          <div class="cdc-icon" style="background:rgba(139,92,246,0.1);color:#7c3aed"><i class="bi bi-clock-fill"></i></div>
+          <div><div class="cdc-label">Office Hours</div><div class="cdc-value">Monday – Friday: 8:00 AM – 4:30 PM<br>Saturday: 8:00 AM – 1:00 PM<br>Sunday & Public Holidays: Closed</div></div>
+        </div>
+
+        <!-- Dept Contacts -->
+        <div class="dept-contact fade-up">
+          <h4>Department-wise Contacts</h4>
+          <div class="dept-contact-row"><span class="dept-name">Principal's Office</span><span class="dept-phone">Ext. 101</span></div>
+          <div class="dept-contact-row"><span class="dept-name">Admissions Office</span><span class="dept-phone">+91 98765 43210</span></div>
+          <div class="dept-contact-row"><span class="dept-name">Academic Office</span><span class="dept-phone">Ext. 201</span></div>
+          <div class="dept-contact-row"><span class="dept-name">Transport Office</span><span class="dept-phone">Ext. 301</span></div>
+          <div class="dept-contact-row"><span class="dept-name">Fee Department</span><span class="dept-phone">Ext. 401</span></div>
+          <div class="dept-contact-row"><span class="dept-name">Medical Room</span><span class="dept-phone">Ext. 501</span></div>
+        </div>
+
+        <!-- Admission Hotline Box -->
+        <div style="background:var(--gold);border-radius:var(--radius-md);padding:24px;text-align:center;margin-top:8px">
+          <div style="font-size:0.78rem;font-weight:700;color:var(--navy-dark);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px">Admission Toll-Free Hotline</div>
+          <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--navy-dark)">1800-123-4567</div>
+          <div style="font-size:0.82rem;color:rgba(13,43,85,0.7);margin-top:6px">Mon–Sat, 9 AM – 5 PM | Free from all networks</div>
+        </div>
+      </div>
+
+      <!-- Contact Form + Map -->
+      <div id="contact-form-section">
+        <!-- Contact Form -->
+        <div style="background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-md);margin-bottom:32px">
+          <h3 style="margin-bottom:6px">Send Us a Message</h3>
+          <p style="font-size:0.88rem;margin-bottom:28px">Have a question or feedback? We typically reply within one business day.</p>
+          <form id="contactForm" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px" class="form-grid-2">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="Full name" required />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">Mobile Number</label>
+                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="10-digit number" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address *</label>
+              <input type="email" id="contactEmail" name="email" class="form-control" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject *</label>
+              <select id="contactSubject" name="subject" class="form-control" required>
+                <option value="">— Select a subject —</option>
+                <option>Admission Inquiry</option>
+                <option>Fee Related Query</option>
+                <option>Academic Query</option>
+                <option>Transport Query</option>
+                <option>General Feedback</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message *</label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Write your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px">
+              <i class="bi bi-send-fill"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="map-container fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.6568885956!2d77.21830097551208!3d28.67296598453886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdb2e9e00001%3A0x40ec6b8e9a8f20d4!2sCivil%20Lines%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1718097600000!5m2!1sen!2sin"
+            width="100%"
+            height="380"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Edgemont School – Civil Lines, New Delhi">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script><script src="js/main.js"></script>
+<style>
+  @media(max-width:768px){.responsive-grid-2{grid-template-columns:1fr!important;}.form-grid-2{grid-template-columns:1fr!important;}}
+</style>
+</body>
+</html>

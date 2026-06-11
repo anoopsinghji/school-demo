@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facilities – Edgemont School</title>
+  <meta name="description" content="World-class facilities at Edgemont School including smart classrooms, science labs, sports complex, library and more." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .facility-detail-card{background:var(--white);border:1px solid var(--gray-100);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:48px;transition:var(--transition);}
+    .facility-detail-card:hover{box-shadow:var(--shadow-lg);}
+    .facility-detail-card.reverse .fdc-inner{flex-direction:row-reverse;}
+    .fdc-inner{display:flex;min-height:320px;}
+    .fdc-image{flex:0 0 45%;background:linear-gradient(135deg,var(--navy),var(--navy-light));display:flex;align-items:center;justify-content:center;font-size:5rem;color:rgba(255,255,255,0.2);position:relative;overflow:hidden;}
+    .fdc-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+    .fdc-image i{position:relative;z-index:1;}
+    .fdc-image .fdc-label{position:absolute;top:16px;left:16px;background:var(--gold);color:var(--navy-dark);padding:4px 12px;border-radius:4px;font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;z-index:1;}
+    .fdc-body{flex:1;padding:40px;}
+    .fdc-body h3{margin-bottom:12px;}
+    .fdc-body p{margin-bottom:20px;}
+    .benefits-list{display:flex;flex-direction:column;gap:8px;}
+    .benefit-item{display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--text-muted);}
+    .benefit-item i{color:var(--gold);flex-shrink:0;}
+    @media(max-width:768px){.fdc-inner,.facility-detail-card.reverse .fdc-inner{flex-direction:column!important;}.fdc-image{min-height:180px;flex:none;}}
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+<section class="page-hero">
+  <div class="container">
+    <h1>Our Facilities</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Facilities</span></div>
+  </div>
+</section>
+
+<section class="section" id="campus-facilities">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Infrastructure</span>
+      <h2>World-Class Campus Facilities</h2>
+      <p>Our 8-acre campus is equipped with everything needed for a complete, enriching educational experience.</p>
+    </div>
+
+    <div id="facilities-rows-container">
+      <!-- Smart Classrooms -->
+    <div class="facility-detail-card fade-up" id="smart-classrooms">
+      <div class="fdc-inner">
+        <div class="fdc-image sample-image-card img-classroom">
+          <img src="images/smart_classroom.png" alt="Smart Classroom" />
+          <span class="fdc-label">80 Classrooms</span>
+        </div>
+        <div class="fdc-body">
+          <h3>Smart Classrooms</h3>
+          <p>All 80 classrooms are equipped with interactive digital boards, high-definition projectors, surround-sound systems, and high-speed Wi-Fi. Our smart classrooms transform traditional lectures into immersive, interactive learning journeys.</p>
+          <div class="benefits-list">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Interactive digital whiteboard in every classroom</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Live streaming and recording capabilities for remote learning</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Individual tablet access for Classes 6 and above</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Climate-controlled environment with ergonomic furniture</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Noise-cancelling acoustic panels for focused learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Science Lab -->
+    <div class="facility-detail-card reverse fade-up" id="science-labs">
+      <div class="fdc-inner">
+        <div class="fdc-image sample-image-card img-science">
+          <img src="images/science_laboratory.png" alt="Science Laboratory" />
+          <span class="fdc-label">3 Labs</span>
+        </div>
+        <div class="fdc-body">
+          <h3>Science Laboratories</h3>
+          <p>Separate, fully-equipped laboratories for Physics, Chemistry, and Biology provide students with hands-on experimental experience aligned with the CBSE curriculum.</p>
+          <div class="benefits-list">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Advanced microscopes, spectroscopes, and scientific instruments</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Chemical fume hoods and safety showers in Chemistry lab</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Digital oscilloscopes and physics measurement kits</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Trained lab assistants for guided experiments</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Safety-first design with fire extinguishers and first-aid kits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Computer Lab -->
+    <div class="facility-detail-card fade-up" id="computer-lab">
+      <div class="fdc-inner">
+        <div class="fdc-image sample-image-card img-computer">
+          <img src="images/computer_laboratory.png" alt="Computer Laboratory" />
+          <span class="fdc-label">200+ PCs</span>
+        </div>
+        <div class="fdc-body">
+          <h3>Computer Laboratory</h3>
+          <p>Our state-of-the-art computer labs feature 200+ high-performance workstations, fiber-optic internet, and licensed software including Microsoft Office, Adobe Suite, and coding platforms.</p>
+          <div class="benefits-list">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> 200+ Intel Core i7 workstations with 16GB RAM</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Dedicated Robotics and AI/ML lab for Classes 9–12</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> 1 Gbps fiber internet with content filtering</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Python, JavaScript, and block-based coding programs</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> 3D printing and design studio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Library -->
+    <div class="facility-detail-card reverse fade-up" id="library">
+      <div class="fdc-inner">
+        <div class="fdc-image sample-image-card img-library">
+          <img src="images/school_library.png" alt="Library & Resource Centre" />
+          <span class="fdc-label">25,000+ Books</span>
+        </div>
+        <div class="fdc-body">
+          <h3>Library & Resource Centre</h3>
+          <p>Our library houses over 25,000 books, periodicals, and digital resources. It's a quiet haven for readers, researchers, and curious minds of all ages.</p>
+          <div class="benefits-list">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> 25,000+ books across fiction, non-fiction, and reference</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Digital library with access to 1 lakh+ e-books and journals</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Newspaper and magazine reading area</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Audiobook and language learning resources</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Dedicated children's reading corner for primary students</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sports -->
+    <div class="facility-detail-card fade-up" id="sports-complex">
+      <div class="fdc-inner">
+        <div class="fdc-image sample-image-card img-sports">
+          <img src="images/sports_complex.png" alt="Sports Complex" />
+          <span class="fdc-label">Multi-Sport</span>
+        </div>
+        <div class="fdc-body">
+          <h3>Sports Complex</h3>
+          <p>A comprehensive sports complex that develops physical fitness, team spirit, and athletic excellence. Our students have represented Delhi at state and national levels.</p>
+          <div class="benefits-list">
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Olympic-size 50m swimming pool with trained coaches</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Full-size cricket ground with floodlights</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Basketball, volleyball, and badminton courts</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> 400m athletic track with synthetic surface</div>
+            <div class="benefit-item"><i class="bi bi-check-circle-fill"></i> Indoor sports hall for table tennis, chess, and gymnastics</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> <!-- Close #facilities-rows-container -->
+
+    <!-- Other Facilities Grid -->
+    <h3 style="text-align:center;margin:50px 0 32px">Additional Facilities</h3>
+    <div id="additional-facilities-container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+      <div class="facility-card fade-up">
+        <div class="facility-image sample-image-card img-transport">
+          <img src="images/school_bus.png" alt="Transport Facility" />
+          <div class="overlay"></div>
+        </div>
+        <div class="facility-body"><h4>Transport Facility</h4><p>GPS-tracked AC buses covering 40+ routes across Delhi NCR with trained drivers and attendants.</p><div class="facility-tags"><span class="tag">40+ Routes</span><span class="tag">GPS Tracked</span><span class="tag">AC Buses</span></div></div>
+      </div>
+      <div class="facility-card fade-up">
+        <div class="facility-image sample-image-card img-cafeteria">
+          <img src="images/school_cafeteria.png" alt="Cafeteria" />
+          <div class="overlay"></div>
+        </div>
+        <div class="facility-body"><h4>Cafeteria</h4><p>Hygienic, FSSAI-certified cafeteria serving nutritious vegetarian meals and snacks. Monthly menu shared with parents.</p><div class="facility-tags"><span class="tag">FSSAI Certified</span><span class="tag">Vegetarian</span><span class="tag">Nutritious</span></div></div>
+      </div>
+      <div class="facility-card fade-up">
+        <div class="facility-image sample-image-card img-medical">
+          <img src="images/medical_room.png" alt="Medical Room" />
+          <div class="overlay"></div>
+        </div>
+        <div class="facility-body"><h4>Medical Room</h4><p>Full-time nurse and visiting doctor 3 days a week. Fully equipped first-aid center for student health emergencies.</p><div class="facility-tags"><span class="tag">Full-time Nurse</span><span class="tag">Doctor Visits</span><span class="tag">First Aid</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanity/client@6.15.2/dist/umd/sanity-client.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sanity/image-url@1.0.2/dist/umd/image-url.min.js"></script>
+<script src="js/sanity-client.js"></script>
+<script src="js/cms-renderer.js"></script>
+</body>
+</html>

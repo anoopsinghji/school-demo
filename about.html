@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Edgemont School</title>
+  <meta name="description" content="Learn about Edgemont School's history, vision, mission, and leadership team." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .timeline { position:relative; padding-left:32px; }
+    .timeline::before { content:''; position:absolute; left:12px; top:0; bottom:0; width:2px; background:var(--gray-200); }
+    .timeline-item { position:relative; margin-bottom:36px; }
+    .timeline-dot { position:absolute; left:-28px; top:4px; width:16px; height:16px; border-radius:50%; background:var(--gold); border:3px solid var(--white); box-shadow:0 0 0 3px var(--gold); }
+    .timeline-year { font-size:0.8rem; font-weight:700; color:var(--gold); letter-spacing:0.08em; margin-bottom:4px; }
+    .timeline-item h4 { margin-bottom:6px; }
+    .timeline-item p { font-size:0.9rem; }
+    .value-card { background:var(--white); border:1px solid var(--gray-100); border-radius:var(--radius-md); padding:28px 24px; text-align:center; transition:var(--transition); }
+    .value-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
+    .value-icon { width:52px;height:52px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.3rem;color:var(--gold-light); }
+    .leader-card { background:var(--white); border:1px solid var(--gray-100); border-radius:var(--radius-md); padding:28px 24px; text-align:center; transition:var(--transition); }
+    .leader-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-4px); }
+    .leader-avatar { width:80px;height:80px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:2rem;color:var(--gold-light);font-family:var(--font-display);font-weight:700; }
+    .leader-card h4 { margin-bottom:4px; }
+    .leader-role { color:var(--gold);font-size:0.82rem;font-weight:600;margin-bottom:8px; }
+    .leader-card p { font-size:0.85rem; }
+  </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>About Edgemont School</h1>
+    <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>About Us</span></div>
+  </div>
+</section>
+
+<!-- School History -->
+<section class="section" id="our-story">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center" class="responsive-grid-2">
+      <div class="fade-up">
+        <span class="eyebrow" style="color:var(--gold);font-size:0.78rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;display:block;margin-bottom:12px">Our Story</span>
+        <h2 style="margin-bottom:20px">38 Years of Shaping Futures</h2>
+        <p style="margin-bottom:16px">Founded in 1985 by visionary educator Dr. Ramesh Edgemont, the Academy began with just 200 students and 15 teachers in a modest building in Civil Lines, New Delhi. The vision was simple but powerful: to provide every child with an education that was rigorous, joyful, and deeply humane.</p>
+        <p style="margin-bottom:16px">Over the decades, Edgemont School grew into one of Delhi's most respected educational institutions, earning recognition from CBSE and national education boards. Today, with over 3,200 students, 180 faculty members, and a sprawling 8-acre campus, we continue to honor that founding vision.</p>
+        <p>Our alumni include doctors, engineers, artists, entrepreneurs, civil servants, and global leaders — all united by the values they imbibed at Edgemont.</p>
+      </div>
+      <div class="fade-up">
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1985</div><h4>Foundation</h4><p>Dr. Ramesh Edgemont establishes the Academy with 200 students in Civil Lines, Delhi.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">1993</div><h4>CBSE Affiliation</h4><p>Receives full CBSE affiliation and introduces Classes 11–12 with Science and Commerce streams.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2002</div><h4>New Campus</h4><p>Expansion to the current 8-acre campus with modern labs, sports complex, and auditorium.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2015</div><h4>Digital Transformation</h4><p>Launch of Smart Classrooms across all grades and introduction of the STEM program.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-year">2024</div><h4>National Recognition</h4><p>Awarded "Best School in Delhi NCR" by Education Today magazine for the 3rd consecutive year.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="section bg-off-white" id="vision-mission">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Our Foundation</span>
+      <h2>Vision, Mission & Values</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:50px" class="responsive-grid-2">
+      <div style="background:var(--navy);border-radius:var(--radius-md);padding:40px;color:white" class="fade-up">
+        <div style="width:48px;height:48px;background:rgba(201,150,42,0.2);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.4rem;color:var(--gold-light)"><i class="bi bi-eye"></i></div>
+        <h3 style="color:white;margin-bottom:16px">Our Vision</h3>
+        <p style="color:rgba(255,255,255,0.75);line-height:1.8">To be a globally recognized institution that nurtures compassionate, intellectually curious, and socially responsible leaders — students who not only excel in their chosen fields but also contribute meaningfully to society and the world.</p>
+      </div>
+      <div style="background:var(--gold);border-radius:var(--radius-md);padding:40px" class="fade-up">
+        <div style="width:48px;height:48px;background:rgba(13,43,85,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:1.4rem;color:var(--navy-dark)"><i class="bi bi-bullseye"></i></div>
+        <h3 style="color:var(--navy-dark);margin-bottom:16px">Our Mission</h3>
+        <p style="color:rgba(13,43,85,0.8);line-height:1.8">To deliver holistic, student-centered education through innovative pedagogy, experienced faculty, and world-class infrastructure — empowering every student to reach their full potential academically, physically, creatively, and morally.</p>
+      </div>
+    </div>
+    <!-- Core Values -->
+    <h3 style="text-align:center;margin-bottom:32px">Our Core Values</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px">
+      <div class="value-card fade-up"><div class="value-icon"><i class="bi bi-integrity"></i></div><h4>Integrity</h4><p style="font-size:0.85rem">We uphold honesty and ethical conduct in everything we do.</p></div>
+      <div class="value-card fade-up"><div class="value-icon"><i class="bi bi-lightbulb"></i></div><h4>Excellence</h4><p style="font-size:0.85rem">We set high standards and inspire students to exceed them.</p></div>
+      <div class="value-card fade-up"><div class="value-icon"><i class="bi bi-heart"></i></div><h4>Compassion</h4><p style="font-size:0.85rem">We care for every individual — student, teacher, and community.</p></div>
+      <div class="value-card fade-up"><div class="value-icon"><i class="bi bi-people"></i></div><h4>Inclusion</h4><p style="font-size:0.85rem">We celebrate diversity and ensure equal opportunity for all.</p></div>
+      <div class="value-card fade-up"><div class="value-icon"><i class="bi bi-arrow-repeat"></i></div><h4>Innovation</h4><p style="font-size:0.85rem">We embrace creativity and forward-thinking in education.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="section" id="leadership">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">School Leadership</span>
+      <h2>Meet Our Leadership Team</h2>
+      <p>Experienced educators and administrators dedicated to driving excellence at Edgemont School.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+      <div class="leader-card fade-up">
+        <div class="leader-avatar">AM</div>
+        <h4>Dr. Ananya Mehta</h4>
+        <div class="leader-role">Principal</div>
+        <p>Ph.D. in Education from Delhi University. 24 years of leadership in K-12 education.</p>
+      </div>
+      <div class="leader-card fade-up">
+        <div class="leader-avatar">RS</div>
+        <h4>Mr. Rajiv Sharma</h4>
+        <div class="leader-role">Vice Principal (Academics)</div>
+        <p>M.Sc. Mathematics. 18 years in curriculum design and academic administration.</p>
+      </div>
+      <div class="leader-card fade-up">
+        <div class="leader-avatar">PK</div>
+        <h4>Mrs. Preethi Kumar</h4>
+        <div class="leader-role">Vice Principal (Administration)</div>
+        <p>MBA in Education Management. Oversees campus operations and student welfare.</p>
+      </div>
+      <div class="leader-card fade-up">
+        <div class="leader-avatar">AJ</div>
+        <h4>Mr. Arjun Joshi</h4>
+        <div class="leader-role">Head of Admissions</div>
+        <p>10+ years in school admissions and parent relations. Guides every family through enrollment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script><script src="js/main.js"></script>
+<style>@media(max-width:768px){.responsive-grid-2{grid-template-columns:1fr!important;}}</style>
+</body>
+</html>
