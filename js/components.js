@@ -23,7 +23,7 @@
           <img src="images/logo.png" alt="Edgemont School Logo" class="nav-logo-img" />
         </div>
         <div class="nav-logo-text">
-          <div class="school-name">Edgemont School</div>
+          <div class="school-name">Little Buds School</div>
           <div class="school-tagline">Excellence in Education</div>
         </div>
       </a>
